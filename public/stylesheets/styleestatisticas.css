@@ -1,0 +1,103 @@
+html, body {margin: 0; height: 100%; overflow: hidden}
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+#barL {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+    width: 300px;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 700px}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+    }
+    .row.content {height:auto;}
+}
+
+/* Style the tab */
+.tab {
+    float: right;
+    background-color: #f1f1f1;
+    width: 10%;
+    height: 390px;
+    margin-right: 15px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    height: 19.9%;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #aec2ea;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #85a3e0;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: right;
+    padding: 0px 12px;
+    border-right: 1px solid #ccc;
+    width: 68%;
+    height: 700px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width:70%;
+    margin: auto;
+}
+
+td, th {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+h1{
+    text-align: center;
+}
+
+#sub{
+    text-align: center;
+}
+
+.nav-pills{
+    background-color: #404040;
+    font-size: 18px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
