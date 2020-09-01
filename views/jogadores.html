@@ -1,0 +1,34 @@
+<html>
+
+<body>
+
+<button onclick="abrir()">Adicionar um jogador</button>
+
+<div id="adicionar">
+    <p>Preencha todas as alinhas para adicionar uma equipa<em>div.</em> <br></p>
+    Nome da equipa: <input type="name" id="nome" value=""/>
+    <br>
+    Escalão: <input type="name" id="escalao" value=""/>
+    <br>
+    Nivel competitivo: <input type="name" id="nivelCompetitivo"/>
+    <br>
+    <br>
+</div>
+
+<script>
+    function abrir(){
+
+        document.getElementById("adicionar").style.visibility="visible";
+
+    }
+
+    function fechar(){
+
+        document.getElementById("adicionar").style.visibility="hidden";
+
+
+    }
+</script>
+
+</body>
+</html>

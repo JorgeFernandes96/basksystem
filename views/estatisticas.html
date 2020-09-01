@@ -1,0 +1,101 @@
+<html lang="pt">
+<head>
+  <title>BaskSys</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/javascripts/estatisticas.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="/stylesheets/styleestatisticas.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/index">BaskSys</a>
+    </div>
+    <ul class="nav navbar-nav">
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Novo Utilizador</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav> 
+    
+  <ul class="nav nav-pills nav-justified">
+    <li class="active"><a data-toggle="pill" href="#global">Estatisticas Globais</a></li>
+    <li><a data-toggle="pill" href="#jogo">Estatisticas Jogo</a></li>
+  </ul>
+<div class="row content">
+    <div class="tab-content">
+    <div id="global" class="tab-pane fade in active">
+    <div class="tab">
+    <button class="tablinks" id ="equipa1" onclick="openCity(event, 'Equipa')" id="defaultOpen"><b>Equipa</b></button>
+    <button class="tablinks" id ="jogador1" onclick="openCity(event, 'jogador1')">Jogador A</button>
+    <button class="tablinks" id ="jogador2" onclick="openCity(event, 'jogador2')">Jogador B</button>
+    <button class="tablinks" id ="jogador3" onclick="openCity(event, 'jogador3')">Jogador C</button>
+    <button class="tablinks" id ="jogador4" onclick="openCity(event, 'jogador4')">Jogador D</button>
+    <button class="tablinks" id ="jogador5" onclick="openCity(event, 'jogador5')">Jogador E</button>
+    <button class="tablinks" id ="jogador6" onclick="openCity(event, 'jogador6')">Jogador F</button>
+    <button class="tablinks" id ="jogador7" onclick="openCity(event, 'jogador7')">Jogador G</button>
+      <button class="tablinks" id ="jogador8" onclick="openCity(event, 'jogador8')">Jogador H</button>
+</div>
+
+        <div class="row content">
+<div id="Equipa" class="tabcontent">
+<table>
+  <tr>
+    <th>Ação</th>
+    <th>Frequencia</th>
+  </tr>
+  <tr onclick="cestosMarcadosXY()">
+    <td>Cestos Marcados</td>
+    <td id="cestosConvertidos">987</td>
+  </tr>
+  <tr>
+    <td>Cestos Falhados</td>
+    <td id="cestosFalhados">822</td>
+  </tr>  
+  <tr>
+    <td>Faltas Desqualificante</td>
+    <td id="faltasDesqualificante">67</td>
+  </tr>
+  <tr>
+    <td>Falta Pessoal</td>
+    <td id="faltaPessoal">141</td>
+  </tr>
+  <tr>
+    <td>Falta Tecnica</td>
+    <td id="faltaTecnica">70%</td>
+  </tr>
+  <tr>
+    <td>Falta AntiDesportiva</td>
+    <td id="faltaAntiDesportiva">20%</td>
+  </tr>
+
+</table>
+</div>
+
+      <div class="container-fluid text-center">
+          <div class="col-sm-2 sidenav" id="barL">
+            <canvas id="canvas">
+
+            </canvas>
+          </div>
+
+      </div>
+        </div>
+        </div>
+    </div>
+
+    <div id="jogo" class="tab-pane fade">
+        <h1></h1>
+        </div>
+    
+         </div>
+
+
+    </body>
+</html>

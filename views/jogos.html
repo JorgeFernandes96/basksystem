@@ -1,0 +1,58 @@
+<html lang="pt">
+<head>
+  <title>BaskSys</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/javascripts/jogos.js"></script>
+  <link rel="stylesheet" href="/stylesheets/stylejogos.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/index">BaskSys</a>
+    </div>
+    <ul class="nav navbar-nav">
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Novo Utilizador</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav> 
+<h1>Lista de Jogos <select class="form-inline" id="sel1">
+    <option>2018</option>
+    <option>2017</option>
+    <option>2016</option>
+  </select></h1><br>
+<div>
+  <a href="/jogo">
+  <table>
+    <tr>
+      <th>Equipa da Casa</th>
+      <th>Equipa Visitante</th>
+      <th>Resultado</th>
+      <th>Data</th>
+    </tr>
+    <tr onclick="myFunction(this)">
+      <td id="equipaCasa1" >Sporting</td>
+      <td id="equipaVisitante1">Benfica</td>
+      <td id="resultado1">100 - 10</td>
+      <td id="data1">Já foi</td>
+    </tr>
+    <tr onclick="myFunction(this)">
+      <td id="equipaCasa2">Benfica</td>
+      <td id="equipaVisitante2">Sporting</td>
+      <td id="resultado2">---</td>
+      <td id="data2">Já foi</td>
+    </tr>
+  </table>
+</a>
+</div>
+
+</body>
+    
+</html>

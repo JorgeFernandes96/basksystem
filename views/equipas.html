@@ -1,0 +1,40 @@
+<html>
+
+<body>
+<button onclick="myFunction()">Visualizar todas as equipas</button>
+<button onclick="abrir()">Adicionar uma equipa</button>
+
+<script>
+    function abrir(){
+
+        document.getElementById("adicionar").style.visibility="visible";
+    }
+
+    function fechar(){
+
+        document.getElementById("adicionar").style.visibility="hidden";
+
+    }
+</script>
+
+<style>
+
+div{
+    visibility: hidden;
+}
+</style>
+<form method="post" action="/equipasPost" action="#">
+<div id="adicionar">
+    <p>Preencha todas as alinhas para adicionar uma equipa</p>
+    Nome da equipa: <input type="name" name="nome" value=""/>
+    <br>
+    Escalão: <input type="name" name="escalao" value=""/>
+    <br>
+    Nivel competitivo: <input type="name" name="nivelCompetitivo"/>
+    <br><br>
+    <button onclick="fechar()">Confirmar</button>
+</div>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,209 @@
+<html lang="pt">
+<head>
+  <title>BaskSys</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="observador.js" type="text/javascript"></script>
+  <script src="lib/easytimer/dist/easytimer.min.js"></script>
+  <script src="dist/easytimer.min.js"></script>
+    <script src="/javascripts/jogo.js"></script>
+    <link rel="stylesheet" href="/stylesheets/stylejogo.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/index">BaskSys</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Jogo</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Treino
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="../../../Desktop/DaniVersion/treinoJ.html">Jogo</a></li>
+          <li><a href="#">Musculação</a></li>
+          <li><a href="#">Agilidade</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Novo Utilizador</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav> 
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav" id="barL">
+        <b>Gravar<br>Posição do Campo</b><br><br><br>
+        <img id="campo" src="images/campo.png" class="img-responsive" style="width:100%" alt="Campo">
+        <img style="visibility: hidden" id="marker" src="https://image.flaticon.com/icons/svg/10/10660.svg">
+      </div>
+      <div class="col-sm-8 text-center"> 
+<div class="row content" id = "idelm" action="javascript:void(0)">
+    <br>
+    <div class="container-fluid">
+    <div class="row">
+    <div class="col-md-2 col-centered">
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive center" id="1" style="width:90%" alt="Jogador1" onclick="highlightImg()">
+        <div class="well well-sm" id="nomeJogador1">Small Well</div>
+    </div>
+    <div class="col-md-2 col-centered" >
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive center"  id="2" style="width:90%" alt="Jogador2" onclick="highlightImg()">
+        <div class="well well-sm" id="nomeJogador2">Small Well</div>
+    </div>
+    <div class="col-md-2 col-centered" >
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive center" style="width:90%"  id="3" alt="Jogador3" onclick="highlightImg()">
+        <div class="well well-sm" id="nomeJogador3">Small Well</div>
+     </div>
+        <div class="col-md-2 col-centered"  >
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive center" style="width:90%" id="4" alt="Jogador4" onclick="highlightImg()">
+            <div class="well well-sm" id="nomeJogador4">Small Well</div>
+     </div>
+        <div class="col-md-2 col-centered"  >
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive center" style="width:90%" id="5" alt="Jogador5" onclick="highlightImg()">
+            <div class="well well-sm" id="nomeJogador5">Small Well</div>
+     </div>
+        </div>
+ <div class="row">
+    <div class="col-md-2 col-centered" >
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive center" id="6" style="width:90%" alt="Jogador1" onclick="highlightImg()">
+        <div class="well well-sm" id="nomeJogador6">Small Well</div>
+    </div>
+    <div class="col-md-2 col-centered" >
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive center" id="7" style="width:90%" alt="Jogador2" onclick="highlightImg()">
+        <div class="well well-sm" id="nomeJogador7">Small Well</div>
+    </div>
+    <div class="col-md-2 col-centered" >
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive center" id="8" style="width:90%" alt="Jogador3" onclick="highlightImg()">
+        <div class="well well-sm" id="nomeJogador8">Small Well</div>
+     </div>
+    </div>
+    </div>
+      <div class="container-fluid" id="cont1">
+  <img src="/images/vs.jpg" class="center" style="width:36%;">
+  <div class="left" id="equipaCasa">Benfica</div>
+  <div class="right"id="equipaVisitante">Sporting</div>
+</div>
+    <br>
+    <div class="container-fluid" id="equipaY">
+           <div class="row" id="jogadores">
+        <div class="col-md-2 col-centered"> 
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive center" id="9" style="width:90%" alt="Jogador1" onclick="highlightImg()">
+            <div class="well well-sm" id="nomeJogador9">Small Well</div>
+    </div>
+    <div class="col-md-2 col-centered"> 
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive center" id="10" style="width:90%" alt="Jogador2" onclick="highlightImg()">
+        <div class="well well-sm" id="nomeJogador10">Small Well</div>
+    </div>
+    <div class="col-md-2 col-centered"> 
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive center" id="11" style="width:90%" alt="Jogador3" onclick="highlightImg()">
+        <div class="well well-sm" id="nomeJogador11">Small Well</div>
+     </div>
+        <div class="col-md-2 col-centered"> 
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive center" id="12" style="width:90%" alt="Jogador4" onclick="highlightImg()">
+            <div class="well well-sm" id="nomeJogador12">Small Well</div>
+     </div>
+        <div class="col-md-2 col-centered"> 
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive center" id="13" style="width:90%" alt="Jogador5" onclick="highlightImg()">
+            <div class="well well-sm" id="nomeJogador13">Small Well</div>
+     </div>
+    </div>
+ <div class="row" id="jogadoresS">
+    <div class="col-md-2 col-centered">
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive center" id="14"  style="width:90%" alt="Jogador1" onclick="highlightImg()">
+        <div class="well well-sm" id="nomeJogador14">Small Well</div>
+    </div>
+    <div class="col-md-2 col-centered"> 
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive center" id="15" style="width:90%" alt="Jogador2" onclick="highlightImg()">
+        <div class="well well-sm" id="nomeJogador15">Small Well</div>
+    </div>
+    <div class="col-md-2 col-centered"> 
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive center" id="16" style="width:90%" alt="Jogador3" onclick="highlightImg()">
+        <div class="well well-sm" id="nomeJogador16">Small Well</div>
+     </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-2 sidebar-nav-fixed pull-right" id="barR">
+    
+<div id="timer">
+<p3><time>00:00:00</time></p3>
+<button type="button" id="start"  class="btn-sm btn-success">
+      <span class="glyphicon glyphicon-play"></span></button>
+<button type="button" id="stop" class="btn-sm btn-danger">
+      <span class="glyphicon glyphicon-pause"></span></button>
+<button type="button" id="clear" class="btn-sm btn-danger">
+      <span class="glyphicon glyphicon-repeat"></span></button>
+</div><br><hr>
+        <script>
+
+            var p3 = document.getElementsByTagName('p3')[0],
+                start = document.getElementById('start'),
+                stop = document.getElementById('stop'),
+                clear = document.getElementById('clear'),
+                seconds = 0, minutes = 0, hours = 0,
+                t = document.getElementById('timer');;
+
+
+            function add() {
+                seconds++;
+                if (seconds >= 60) {
+                    seconds = 0;
+                    minutes++;
+                    if (minutes >= 60) {
+                        minutes = 0;
+                        hours++;
+                    }
+                }
+
+                p3.textContent = (hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" + (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" + (seconds > 9 ? seconds : "0" + seconds);
+
+                timer();
+            }
+            function timer() {
+                t = setTimeout(add, 1000);
+            }
+
+            start.onclick = timer;
+
+            /* Stop button */
+            stop.onclick = function() {
+                 clearTimeout(t);
+             }
+
+             /* Clear button */
+
+             clear.onclick = function() {
+                 p3.textContent = "00:00:00";
+                 seconds = 0; minutes = 0; hours = 0;
+                 clearTimeout(t);
+             }
+</script>
+        <p><b>Cesto</b></p>
+        <button type="button" onclick="guardarCestoConvertido()" class="btn btn-success">Convertido</button><br><br>
+        <button type="button" onclick="guardarCestoFalhado()"class="btn btn-danger">Falhado</button><br><br>
+        <hr>
+        <p><b>Falta</b></p>
+        <button type="button" onclick="guardarFaltaDesqualificante()"class="btn btn-warning">Desqualificante</button><br><br>
+        <button type="button" onclick="guardarFaltaPessoal()"class="btn btn-warning">Pessoal</button><br><br>
+        <button type="button" onclick="guardarFaltaTecnica()"class="btn btn-warning">Tecnica</button><br><br>
+        <button type="button" onclick="guardarFaltaAntiDesportiva()"class="btn btn-warning">Anti-desportiva</button><br>
+        <hr>
+        <button type="button" class="btn btn-danger">
+      <span class="glyphicon glyphicon-backward"></span> Undo
+    </button>
+      </div>
+  </div>
+</div>
+    
+
+</body>
+</html>
